@@ -10,24 +10,25 @@ export default function Navigation() {
   }
   return (
     <div>
-      <nav style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>
-          <ul>
-              <li><a className='active' href='#home'>Home</a></li>
-              <li><a style={aStyle} href='#news'>News</a></li>
-              <li><a style={aStyle} href='#about'>About</a></li>
-              <li><a style={aStyle} href='#contact'>Contact</a></li>
-              <div className='switch-button' style={{position: 'relative', float: 'right'}}>
-          <li><a className='switch-mode' href='#' onClick={toggle}
-          style={aStyle} 
-          data-testid="toggle-theme-btn">
-          Switch Nav to {!dark ? 'Dark' : 'Light'} mode
-         </a>
-         </li>
-         </div>
-</ul>
-          
-      
+      <nav >
+        <ul style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>
+          <li><a className='active' href='#home'>Home</a></li>
+          <li><a style={aStyle} href='#news'>News</a></li>
+          <li><a style={aStyle} href='#about'>About</a></li>
+          <li><a style={aStyle} href='#contact'>Contact</a></li>
+          <div className='switch-button' style={{ position: 'relative', float: 'right' }}>
+            <li><a className='switch-mode' href='#' onClick={toggle}
+              style={aStyle}
+              data-testid="toggle-theme-btn">
+              Switch Nav to {!dark ? 'Dark' : 'Light'} mode
+            </a>
+            </li>
+          </div>
+        </ul>
+
+
+
       </nav>
-      </div>
+    </div>
   )
 }
